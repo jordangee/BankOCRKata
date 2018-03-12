@@ -10,6 +10,7 @@
 		5A900D68205701AA00611F38 /* BankOCRKata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A900D5E205701AA00611F38 /* BankOCRKata.framework */; };
 		5A900D6D205701AA00611F38 /* BankOCRKataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A900D6C205701AA00611F38 /* BankOCRKataTests.swift */; };
 		5A900D6F205701AA00611F38 /* BankOCRKata.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A900D61205701AA00611F38 /* BankOCRKata.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5A900D792057026600611F38 /* BankOCRParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A900D782057026600611F38 /* BankOCRParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		5A900D67205701AA00611F38 /* BankOCRKataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BankOCRKataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A900D6C205701AA00611F38 /* BankOCRKataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOCRKataTests.swift; sourceTree = "<group>"; };
 		5A900D6E205701AA00611F38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A900D782057026600611F38 /* BankOCRParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankOCRParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				5A900D61205701AA00611F38 /* BankOCRKata.h */,
 				5A900D62205701AA00611F38 /* Info.plist */,
+				5A900D782057026600611F38 /* BankOCRParser.swift */,
 			);
 			path = BankOCRKata;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					5A900D5D205701AA00611F38 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					5A900D66205701AA00611F38 = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A900D792057026600611F38 /* BankOCRParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +339,7 @@
 		5A900D73205701AA00611F38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -347,6 +353,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lilybug.dotjo.BankOCRKata;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -355,6 +362,7 @@
 		5A900D74205701AA00611F38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -376,6 +384,7 @@
 		5A900D76205701AA00611F38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J543H758C9;
 				INFOPLIST_FILE = BankOCRKataTests/Info.plist;
@@ -390,6 +399,7 @@
 		5A900D77205701AA00611F38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = J543H758C9;
 				INFOPLIST_FILE = BankOCRKataTests/Info.plist;
